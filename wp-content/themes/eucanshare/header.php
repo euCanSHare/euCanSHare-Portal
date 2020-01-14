@@ -54,9 +54,10 @@
 				<a class="menu-news <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
 				<a class="menu-news <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
 				<a class="menu-news <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
-				<a class="menu-news" href="https://mica.eucanshare.bsc.es">COHORTS MGT.</a>
-				<a class="menu-news" target = "blank" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/auth?response_type=code&client_id=agate&redirect_uri=https%3A%2F%2Fagate.eucanshare.bsc.es%2Fauth%2Fcallback%2Feucanshare&scope=openid&state=rnz13QKU1WqEcgD7hNMcIjgo2kdnMolTCQgPwZx_Me0&nonce=NYhCtWYKlq57OC6TItU5iiD8s9jPCkHk_PAkBbzW87I">My Workspace</a>
-				<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
+				<a class="menu-news" href="https://mica.eucanshare.bsc.es"> COHORTS MGT.</a>
+
+				<a class="menu-news <?php if (is_page('1268')) {echo 'selected';}?> " href="<?php echo get_page_link(1268) ?>">My Workspace</a>				
+<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
 				<!--<a clhss="menu-contatti last <?php if (is_page('608')){ echo 'selected';}?>"  href="<?php echo get_page_link(608) ?>" >SUPPORT</a>-->
 			</nav>
 			<div id="menu"></div>
