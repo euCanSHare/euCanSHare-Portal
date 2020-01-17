@@ -1,2 +1,2 @@
-## Prototype for EuCanSHare portal
+## WP EuCanSHare portal
 
