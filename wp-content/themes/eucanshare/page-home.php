@@ -17,12 +17,12 @@ get_header(); ?>
 <!-- **************** SLIDER **************** -->
 <div id="home">
 
-        <?php//  include("inc/slideshow.php");  ?>
-        <?php//  include("inc/slideshowMobile.php");  ?>
+  <?php//  include("inc/slideshow.php");  ?>
+  <?php//  include("inc/slideshowMobile.php");  ?>
 	<?php// get_template_part("inc/news"); ?>
 	<?php//  include("inc/social.php"); ?>	
   <div class="page-content">
-    <div style="width:45%;margin:50px; float:right"><img src="/dataportal/wp-content/uploads/2019/11/figure1.png" style="width:100%"></div>
+    <div style="width:45%;margin:50px; float:right"><img src="/dataportal/wp-content/uploads/2019/11/figure1.png" style="width:100%"></div> 
     <div style="padding-left:150px; padding-top:50px">
       <h1>Welcome to euCanSHare Data portal</h1>
       <p>&nbsp;</p>

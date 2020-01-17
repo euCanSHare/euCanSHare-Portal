@@ -10,6 +10,7 @@
  */
 
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -43,21 +44,45 @@
 
 <header class="breakpage">
 		<div class="top-gradient"></div>
+
 		<div class="wrapper cf">
 			<div class="site-branding">
-					<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
-			</div><!-- .site-branding -->
+				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
+			</div>
+
+			<!-- Login/Logout section -->
+
+			<div style="margin: 1em 0;">
+
+				<?php if (! is_user_logged_in()) : ?>
+					<?php echo do_shortcode("[openid_connect_generic_login_button]"); ?>
+					<a class="oidc-button" style="margin: 1em 0;" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Register </a> 
+				<?php endif;?>
+
+				<?php if (is_user_logged_in()) : ?>
+					<div style="display: inline-block; margin: 1em 0;">
+						<?php global $current_user; get_currentuserinfo(); ?>
+						Hi <?php echo $current_user->user_firstname; ?> !
+						<a class="oidc-button" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+					</div>
+				<?php endif;?>
+
+				<!--<a class="oidc-button" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Logout </a> -->
+
+				<!-- <a class="oidc-button" style="margin: 1em 0;" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Register </a> -->
+
+			</div>
+
 			<nav id="site-navigation" class="main-navigation"> 
-<!--<?php echo wp_nav_menu('eucanshare' )?>-->
+			<!--<?php echo wp_nav_menu('eucanshare' )?>-->
 				<a class="menu-news" href="<?php echo home_url('/')?>">HOME</a>
 				<a class="menu-news" target="blank" href="http://eucanshare.eu">EUCANSHARE PROJECT</a>
 				<a class="menu-news <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
 				<a class="menu-news <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
 				<a class="menu-news <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
 				<a class="menu-news" href="https://mica.eucanshare.bsc.es"> COHORTS MGT.</a>
-
-				<a class="menu-news <?php if (is_page('1268')) {echo 'selected';}?> " href="<?php echo get_page_link(1268) ?>">My Workspace</a>				
-<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
+				<a class="menu-news <?php if (is_page('1268')) {echo 'selected';}?> " href="<?php echo get_page_link(1268) ?>">My Workspace</a>			
+				<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
 				<!--<a clhss="menu-contatti last <?php if (is_page('608')){ echo 'selected';}?>"  href="<?php echo get_page_link(608) ?>" >SUPPORT</a>-->
 			</nav>
 			<div id="menu"></div>

@@ -1974,7 +1974,6 @@ header {
   display: inline-block;
   float: left;
 }
-
 .logo {
   width: 200px;
   height: 65px;
@@ -1995,6 +1994,25 @@ header {
     width: 150px;
     height: 62px;
   }
+}
+
+/*
+.login{
+  display: inline-block;
+  float: right;
+}
+*/
+.oidc-button {
+	background-color: #e4032e;
+	border: 2px solid #e4032e;
+	color: white;
+	font-weight: bold;
+	border-radius: 1px;
+	padding:4px;
+}
+.oidc-button:hover {
+	background-color:#fff;
+	color:#e4032e;
 }
 
 .main-navigation {
