@@ -280,3 +280,9 @@ if ( function_exists('register_sidebar') )
     'after_title' => '</h3>',
   )
 );*/
+
+function load_js() {
+    wp_enqueue_script('jquery');
+	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', 
+  	array('jquery'), false, true); 
+}
