@@ -56,14 +56,14 @@
 
 				<?php if (! is_user_logged_in()) : ?>
 					<?php echo do_shortcode("[openid_connect_generic_login_button]"); ?>
-					<a class="oidc-button" style="margin: 1em 0;" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Register </a> 
+					<!-- <a class="oidc-button" style="margin: 1em 0;" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Register - Login </a> --> 
 				<?php endif;?>
 
 				<?php if (is_user_logged_in()) : ?>
 					<div style="display: inline-block; margin: 1em 0;">
 						<?php global $current_user; get_currentuserinfo(); ?>
-						Hi <?php echo $current_user->user_firstname; ?> !
-						<a class="oidc-button" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+							<strong> <span style="color: #005076;">	Welcome, <?php echo $current_user->user_firstname; ?> ! </span> </strong>
+							<a class="oidc-button" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
 					</div>
 				<?php endif;?>
 
@@ -80,7 +80,7 @@
 				<a class="menu-news <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
 				<a class="menu-news <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
 				<a class="menu-news <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
-				<a class="menu-news" href="https://mica.eucanshare.bsc.es"> COHORTS MGT.</a>
+				<a class="menu-news <?php if (is_page('1307')) {echo 'selected';}?> " href="<?php echo get_page_link(1307) ?>"> COHORTS MGT.</a>
 				<a class="menu-news <?php if (is_page('1268')) {echo 'selected';}?> " href="<?php echo get_page_link(1268) ?>">My Workspace</a>			
 				<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
 				<!--<a clhss="menu-contatti last <?php if (is_page('608')){ echo 'selected';}?>"  href="<?php echo get_page_link(608) ?>" >SUPPORT</a>-->
