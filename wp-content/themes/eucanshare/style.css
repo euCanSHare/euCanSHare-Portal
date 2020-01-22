@@ -4,7 +4,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, 
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
   padding: 0;
@@ -19,10 +19,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body {
   line-height: 1;
-}
-
-ol, ul, li {
-  list-style: none;
 }
 
 blockquote, q {
@@ -765,9 +761,21 @@ VAR
 /* ==========================================================================
 MINXING
    ========================================================================== */
+
+/* ==========================================================================
+   BOXES
+   ========================================================================== */
+
+.access-box {
+  border:1px solid black; 
+  padding:20px;
+  margin: 20px 0px 20px 0px;
+}
+
 /* ==========================================================================
  DROPDOWN
    ========================================================================== */
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1237,7 +1245,7 @@ p, ul, li {
   p, ul, li {
     font-size: 14px;
     line-height: 20px;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1245,7 +1253,7 @@ p, ul, li {
   p, ul, li {
     font-size: 14px;
     line-height: 20px;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1974,6 +1982,7 @@ header {
   display: inline-block;
   float: left;
 }
+
 .logo {
   width: 200px;
   height: 65px;
@@ -1996,12 +2005,6 @@ header {
   }
 }
 
-/*
-.login{
-  display: inline-block;
-  float: right;
-}
-*/
 .oidc-button {
 	background-color: #e4032e;
 	border: 2px solid #e4032e;
@@ -2011,6 +2014,19 @@ header {
 	padding:4px;
 }
 .oidc-button:hover {
+	background-color:#fff;
+	color:#e4032e;
+}
+
+.button-link {
+	background-color: #e4032e;
+	border: 2px solid #e4032e;
+	color: white;
+	font-weight: bold;
+	border-radius: 1px;
+	padding:4px;
+}
+.button-link:hover {
 	background-color:#fff;
 	color:#e4032e;
 }
@@ -4661,6 +4677,11 @@ section.breakpage.news {
 /* ==========================================================================
    SOCIAL
    ========================================================================== */
+
+.social {
+  padding: 0;
+  list-style: none;
+}
 section.breakpage.social {
   margin-bottom: 90px;
 }

@@ -21,7 +21,7 @@
                                 <!-- <div class="col-6 text-center">
                                     <a aria-label="Access Mica" class="button-link" href="https://mica.eucanshare.bsc.es/" target="_blank"> Access Mica</a>
                                 </div> -->
-                                <div class="col-12 text-center">
+                                <div class="col-12 text-left">
                                     <a aria-label="Request access to Opal" class="button-link" href="<?php echo get_page_link(1319) ?>" target="_blank"> Request data manager access </a>
                                 </div>
                             </div>

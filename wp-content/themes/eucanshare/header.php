@@ -18,6 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 	
 	<!-- 	favicon 	-->
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicon/apple-touch-icon.png">
@@ -84,6 +85,7 @@
 				<a class="menu-news <?php if (is_page('1268')) {echo 'selected';}?> " href="<?php echo get_page_link(1268) ?>">My Workspace</a>			
 				<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
 				<!--<a clhss="menu-contatti last <?php if (is_page('608')){ echo 'selected';}?>"  href="<?php echo get_page_link(608) ?>" >SUPPORT</a>-->
+			
 			</nav>
 			<div id="menu"></div>
 		</div>			
