@@ -12,7 +12,7 @@
                 <div style="margin-left:100px; margin-right:50px">
                     <div class="wrapper ">
                         <h2 class="section-title"><?php the_title();?></h2>
-                        <p> This section provides links for data management resources in the euCanSHare platform. </p>
+                        <p> This section provides links for data management resources in euCanSHare's platform. </p>
                         <p> Users registered and logged in euCanSHare are allowed to ask for granted privileges in Opal and/or Mica. </p> 
                         <p> Either registered and non-registered users can access to the public cohorts viewer. (Studies) </p>
                         <br>

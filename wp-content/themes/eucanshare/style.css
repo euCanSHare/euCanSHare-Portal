@@ -755,6 +755,79 @@ button.swiper-pagination-bullet {
 }
 
 /* ==========================================================================
+INHERITED
+   ========================================================================== */
+
+.page-wrap {
+    padding: 2rem 0;
+}
+
+.inner-box-title {
+  width: 100%;
+  color: #343a40; 
+  margin-bottom: 1.5rem;
+  border-bottom: 1.5px solid #75B9BE; 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.inner-box-link {
+  color: #343a40; 
+  font-weight: bold;
+}
+
+.inner-box-link:hover {
+  color: #75B9BE; 
+  text-decoration: none;
+}
+
+.inner-box-col-img img {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inner-box-col-img img  {
+      max-width: 600px;
+      height: auto;
+  }
+}
+
+.inner-box-col {
+  padding: 25px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .4);
+}
+
+.inner-box-col-content {
+  margin-top: 75px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inner-box-col-content {
+      font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .inner-box-col-content {
+      margin-top: 0px;
+  }
+}
+
+.inner-box-col-img img {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inner-box-col-img img  {
+      max-width: 600px;
+      height: auto;
+  }
+}
+
+/* ==========================================================================
 VAR
    ========================================================================== */
 /* testo corrente */

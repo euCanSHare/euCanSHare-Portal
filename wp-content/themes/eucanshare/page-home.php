@@ -22,8 +22,8 @@ get_header(); ?>
 	<?php// get_template_part("inc/news"); ?>
 	<?php//  include("inc/social.php"); ?>	
   <div class="page-content">
-    <div style="width:45%;margin:50px; float:right"><img src="/dataportal/wp-content/uploads/2019/11/figure1.png" style="width:100%"></div> 
-    <div style="padding-left:150px; padding-top:50px">
+    <div style="width:45%;margin:75px; float:right"><img src="/dataportal/wp-content/uploads/2019/11/figure1.png" style="width:100%"></div> 
+    <div style="padding-left:150px; padding-top:100px">
       <h1>Welcome to euCanSHare Data portal</h1>
       <p>&nbsp;</p>
       <p>euCanSHare data portal provides access to data catalogues, data access policies, analysis
