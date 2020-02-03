@@ -74,7 +74,7 @@
 
 			</div>
 
-			<nav id="site-navigation" class="main-navigation"> 
+			<nav class="main-navigation"> 
 			<!--<?php echo wp_nav_menu('eucanshare' )?>-->
 				<a class="menu-news" href="<?php echo home_url('/')?>">HOME</a>
 				<a class="menu-news" target="blank" href="http://eucanshare.eu">EUCANSHARE PROJECT</a>

@@ -16,8 +16,6 @@
                         <div class="row">
                             <div class="col-12-sm-md-lg">
 
-                                <h5> Description: </h5>
-
                                 <p> euCanSHare <strong>Access Manager </strong> will provide support for managing data access credentials. 
                                     The access manager should provide a working environment for: </p>
                                 <ul>

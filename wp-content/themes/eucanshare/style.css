@@ -766,7 +766,7 @@ INHERITED
   width: 100%;
   color: #343a40; 
   margin-bottom: 1.5rem;
-  border-bottom: 1.5px solid #75B9BE; 
+  border-bottom: 1.5px solid #b61f34; 
   font-size: 24px;
   font-weight: bold;
 }
@@ -777,7 +777,7 @@ INHERITED
 }
 
 .inner-box-link:hover {
-  color: #75B9BE; 
+  color: #b61f34; 
   text-decoration: none;
 }
 
@@ -1440,6 +1440,8 @@ p, ul, li {
 /* ==========================================================================
    FORM 
    ========================================================================== */
+
+
 .wpcf7, .form-helper {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -1447,7 +1449,7 @@ p, ul, li {
 }
 
 .wpcf7 span.wpcf7-list-item, .form-helper span.wpcf7-list-item {
-  display: inline-block;
+  display: block;
   margin: 0px;
 }
 
@@ -1473,7 +1475,11 @@ p, ul, li {
   font-size: 15px;
   width: auto;
   display: block;
-  width: 100%;
+}
+
+textarea:hover {
+  border: 1px solid #b61f34;
+  border-bottom: 2px solid #b61f34;
   cursor: pointer;
 }
 
@@ -1517,6 +1523,12 @@ p, ul, li {
   float: right;
 }
 
+input[type="submit"]:hover {
+  background-color: #b61f34;
+  border-color: #b61f34;
+}
+
+
 @media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .wpcf7 input[type="submit"], .form-helper input[type="submit"] {
     margin: 0 auto;
@@ -1532,7 +1544,8 @@ p, ul, li {
 .wpcf7 input[type="checkbox"], .form-helper input[type="checkbox"] {
   border: 2px solid #00738c;
   min-width: inherit;
-  width: auto;
+  width: 15px;
+  height: 15px;
   background: #FFF;
   outline: none;
   color: #b61f34;
@@ -1554,14 +1567,15 @@ p, ul, li {
 }
 
 .wpcf7 input[type="checkbox"]:checked, .form-helper input[type="checkbox"]:checked {
-  background-color: #00738c;
-  border-color: #00738c;
+  background-color: #b61f34;
+  border-color: #b61f34;
 }
 
 .wpcf7 input[type="checkbox"]:hover, .form-helper input[type="checkbox"]:hover {
-  background-color: #00738c;
-  border-color: #00738c;
+  background-color: #b61f34;
+  border-color: #b61f34;
 }
+
 
 .wpcf7 .field-accept, .form-helper .field-accept {
   padding: 15px 0px;
