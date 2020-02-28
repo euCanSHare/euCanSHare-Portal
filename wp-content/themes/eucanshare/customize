@@ -1,0 +1,43 @@
+.custom-h3 {
+	color: #00738c;
+	font-size: 26px;
+}
+
+.custom-ul {
+  margin-left: 2.5em;
+}
+
+.custom-li {
+	margin-bottom: 10px;
+}
+
+.display {
+	display: block;
+	margin: 24px 0px 24px 0px;
+}
+
+.display-table {
+	width: 80%;
+	min-height: 130px;
+}
+
+.float-left {
+	margin-left: 2.5em;
+	float: left;
+}
+
+.float-right {
+	margin-left: 2.5em;
+	float: right;
+}
+
+#JL
+
+.homeblock {
+	width:30%;
+	margin:0 10px;
+	float:left;
+}
+.homeblock-inner {
+	min-height:200px;	
+}

@@ -1,1 +1,5 @@
 wp-content/uploads/*
+*.php
+wp-admin/
+readme.html
+licenza.html

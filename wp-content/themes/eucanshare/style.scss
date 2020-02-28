@@ -203,7 +203,7 @@ p, ul, li {
 	margin: 0 auto;
 }
 
-
+/*
 .btn{
 	display: inline-block;
 	background-color: white;
@@ -260,6 +260,7 @@ p, ul, li {
 	}
 
 }
+*/
 
 .title {
 	font-family: $font-sans;
@@ -2449,78 +2450,80 @@ position: relative;
 	   }
 	   
    }
- 
- ul.disc-list {
-	 list-style-position: outside;
-	 &.special {
-		 li {
-			 margin-left: 18px;
-		 }
-	 }
-	 li {
-		margin-bottom: 10px;
-	    margin-left: 60px;
-		list-style-position: inside;
-		text-indent: -18px;
-			@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
-				margin-left: 30px;
-			}
+
+// This fn will be included in style.css
+
+// ul.disc-list {
+//	 list-style-position: outside;
+//	 &.special {
+//		 li {
+//			 margin-left: 18px;
+//		 }
+//	 }
+//	 li {
+//		margin-bottom: 10px;
+//	    margin-left: 60px;
+//		list-style-position: inside;
+//		text-indent: -18px;
+//			@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
+//				margin-left: 30px;
+//			}
 		
-	    	&:before { /* add the new bullet point */
-				display: inline-block;
-				content: '';
-				-webkit-border-radius: 0.375rem;
-				border-radius: 0.375rem;
-				height: 10px;
-				width: 10px;
-				margin-right: 0.5rem;
-				background-color: $primary-color-light;
-					@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
-						margin-right: 0.35em;
-						height: 0.52rem;
-						width: 0.52rem;
-					}
-			}
-		.list-nested{
-			margin-bottom: 10px;
-		    margin-left: 90px;
-		    transform: translateX(-60px);
-		    	@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
-					margin-left: 16px;
-					transform: none;
-				}
+//	    	&:before { /* add the new bullet point */
+//				display: inline-block;
+//				content: '';
+//				-webkit-border-radius: 0.375rem;
+//				border-radius: 0.375rem;
+//				height: 10px;
+//				width: 10px;
+//				margin-right: 0.5rem;
+//				background-color: $primary-color-light;
+//					@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
+//						margin-right: 0.35em;
+//						height: 0.52rem;
+//						width: 0.52rem;
+//					}
+//			}
+//		.list-nested{
+//			margin-bottom: 10px;
+//		    margin-left: 90px;
+//		    transform: translateX(-60px);
+//		    	@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
+//					margin-left: 16px;
+//					transform: none;
+//				}
 				
-		    	&:before { /* add the new bullet point */
-					content: '';
-					-webkit-border-radius: 0.375rem;
-					border-radius: 0.375rem;
-					height: 10px;
-					width: 10px;
-					margin-right: 0.5rem;
-					border: 2px solid $primary-color-light;
-					background-color: transparent;
-						@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
-						margin-right: 0.35em;
-						height: 0.52rem;
-						width: 0.52rem;
-					}
-				}
-				&:nth-child(1){
-					margin-top: 10px;
-				}
-		}	
-	 }
+//		    	&:before { /* add the new bullet point */
+//					content: '';
+//					-webkit-border-radius: 0.375rem;
+//					border-radius: 0.375rem;
+//					height: 10px;
+//					width: 10px;
+//					margin-right: 0.5rem;
+//					border: 2px solid $primary-color-light;
+//					background-color: transparent;
+//						@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) { 
+//						margin-right: 0.35em;
+//						height: 0.52rem;
+//						width: 0.52rem;
+//					}
+//				}
+//				&:nth-child(1){
+//					margin-top: 10px;
+//				}
+//		}	
+//	 }
 	 
-	.list-nested-no-bullet {
-		text-indent: 0;
-		margin-left: 36px;
-			&:before {
-			content: '';
-			display: none;
-			}
-	}
-	 
- }  
+//	.list-nested-no-bullet {
+//		text-indent: 0;
+//		margin-left: 36px;
+//			&:before {
+//			content: '';
+//			display: none;
+//			}
+//	}
+//	 
+// }  
 .less-opacity {
   opacity: 0.8;
 }
@@ -3406,9 +3409,6 @@ section.breakpage.social {
 	}   
 }  
    
-
-
-
 
 /* ==========================================================================
   NEWSLETTER

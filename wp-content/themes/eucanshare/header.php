@@ -18,7 +18,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 	
 	<!-- 	favicon 	-->
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicon/apple-touch-icon.png">
@@ -43,7 +42,7 @@
 
 <body <?php body_class(); ?>>
 
-<header class="breakpage">
+<header class="breakpage bottom-line">
 		<div class="top-gradient"></div>
 
 		<div class="wrapper cf">
@@ -51,45 +50,30 @@
 				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
 			</div>
 
-			<!-- Login/Logout section -->
+			<div id="menu"> </div>
 
-			<div style="margin: 1em 0;">
+		</div>	
+		
+		<!-- Login/Logout section -->
 
+		<nav class="main-navigation"> 
+				
+		<!--<?php echo wp_nav_menu('eucanshare' )?>-->
+			<a href="<?php echo home_url('/')?>">HOME</a>
+			<a target="blank" href="http://eucanshare.eu">PROJECT</a>
+			<a <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
+			<a <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
+			<a <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
+			<a <?php if (is_page('1307')) {echo 'selected';}?> " href="<?php echo get_page_link(1307) ?>">COHORTS MGT.</a>		
+			<a <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
 				<?php if (! is_user_logged_in()) : ?>
 					<?php echo do_shortcode("[openid_connect_generic_login_button]"); ?>
-					<!-- <a class="oidc-button" style="margin: 1em 0;" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Register - Login </a> --> 
 				<?php endif;?>
-
 				<?php if (is_user_logged_in()) : ?>
-					<div style="display: inline-block; margin: 1em 0;">
-						<?php global $current_user; get_currentuserinfo(); ?>
-							<strong> <span style="color: #005076;">	Welcome, <?php echo $current_user->user_firstname; ?> ! </span> </strong>
-							<a class="oidc-button" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
-					</div>
-				<?php endif;?>
-
-				<!--<a class="oidc-button" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Logout </a> -->
-
-				<!-- <a class="oidc-button" style="margin: 1em 0;" href="https://inb.bsc.es/auth/realms/euCanSHare/protocol/openid-connect/logout?redirect_uri=https://eucanshare.bsc.es" rel="home"> Register </a> -->
-
-			</div>
-
-			<nav class="main-navigation"> 
-			<!--<?php echo wp_nav_menu('eucanshare' )?>-->
-				<a class="menu-news" href="<?php echo home_url('/')?>">HOME</a>
-				<a class="menu-news" target="blank" href="http://eucanshare.eu">EUCANSHARE PROJECT</a>
-				<a class="menu-news <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
-				<a class="menu-news <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
-				<a class="menu-news <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
-				<a class="menu-news <?php if (is_page('1307')) {echo 'selected';}?> " href="<?php echo get_page_link(1307) ?>"> COHORTS MGT.</a>
-				<a class="menu-news <?php if (is_page('1268')) {echo 'selected';}?> " href="<?php echo get_page_link(1268) ?>">My Workspace</a>			
-				<a class="menu-news <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
-				<!--<a clhss="menu-contatti last <?php if (is_page('608')){ echo 'selected';}?>"  href="<?php echo get_page_link(608) ?>" >SUPPORT</a>-->
-			
-			</nav>
-			<div id="menu"></div>
-		</div>			
-</header><!-- #head -->
+					<a class="logout-positioning" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+				<?php endif;?>			
+		</nav>
+</header>
 
 	<?php if(is_page('Project')) { ?>
 		<?php get_template_part("inc/submenu"); ?>

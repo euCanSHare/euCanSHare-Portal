@@ -21,6 +21,10 @@ body {
   line-height: 1;
 }
 
+.bottom-line {
+  border-bottom: 2px solid #e4032e;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -38,7 +42,7 @@ q:before, q:after {
 
 a {
   text-decoration: none;
-  color: #666666;
+  color: #005076;
 }
 
 /* remember to highlight inserts somehow! */
@@ -781,18 +785,6 @@ INHERITED
   text-decoration: none;
 }
 
-.inner-box-col-img img {
-  height: auto;
-  width: 100%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .inner-box-col-img img  {
-      max-width: 600px;
-      height: auto;
-  }
-}
-
 .inner-box-col {
   padding: 25px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .4);
@@ -820,11 +812,71 @@ INHERITED
   width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1366px) {
   .inner-box-col-img img  {
-      max-width: 600px;
+      max-width: 450px;
       height: auto;
+      min-height: 200px;
+      min-width: 200px;
   }
+}
+
+@media only screen and (max-width: 1200px) {
+  .block {
+    display: block!important;
+  }
+}
+
+.inner-box-home-img {
+  max-height: 300px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .inner-box-home-img {
+    max-height: 300px;
+  }
+}
+
+.home-col-content {
+  align-self: center;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.home-col-content-user {
+  align-self: center;
+  margin-left: 75px;
+  margin-top: 35px;
+}
+
+.home-items {
+  width: 100%;
+  background-color: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 10px 20px 10px 20px;
+}
+
+@media only screen and (max-width: 541px) {
+  .sm-hide-text{
+    display: none;
+  }
+}
+
+.logout-positining {
+  display: inline-block; 
+  margin: 1em 0;
+  color: white !important;
+}
+
+.logout-positining:hover {
+  color: #005076 !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .logout-positining {
+    display: block; 
+}
 }
 
 /* ==========================================================================
@@ -1148,12 +1200,12 @@ body {
 }
 
 #main-content {
-  margin-top: 109px;
+  margin-top: 175px;
 }
 
-@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (min-width: 320px) and (max-width: 767px) {
   #main-content {
-    margin-top: 90px;
+    margin-top: 125px;
   }
 }
 
@@ -1189,7 +1241,7 @@ section.breakpage {
 
 .section-title {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #005076;
   border: 2px solid #005076;
   display: inline-block;
@@ -1274,7 +1326,7 @@ a {
 }
 
 a:hover {
-  color: #00738c;
+  color: #b61f34;
 }
 
 .blue {
@@ -1307,16 +1359,27 @@ h2, h3, h4 {
   color: #445258;
 }
 
+
+.cards-header {
+    width: 320px;
+    height: auto;
+}
+
+.cards-header h3 {
+  font-size: 26px;
+}
+
 p, ul, li {
   color: #445258;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 15px;
+  list-style: none;
 }
 
 @media only screen and (max-width: 767px) {
   p, ul, li {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     margin-bottom: 15px;
   }
@@ -1324,6 +1387,17 @@ p, ul, li {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   p, ul, li {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 985px) and (max-width: 1140px) {
+  .sm-hide-text h4 {
+    font-size: 18px;
+  }
+  .fonts p, ul, li {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 15px;
@@ -1524,7 +1598,7 @@ textarea:hover {
 }
 
 input[type="submit"]:hover {
-  background-color: #b61f34;
+  /*background-color: #b61f34;*/
   border-color: #b61f34;
 }
 
@@ -2048,17 +2122,24 @@ header {
 
 .menu-fixed header {
   background: rgba(255, 255, 255, 0.9);
-  padding: 10px 0px;
+  padding: 16.5px 0px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .menu-fixed .main-navigation {
-    padding-top: 100px;
-    margin-top: 4px;
+@media only screen and (max-width: 768px) {
+  .menu-fixed .main-navigation{
+    display: none;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-fixed .main-navigation {
+    padding-top: 100px;
+    margin-top: 4px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .menu-fixed .logo {
     height: 30px;
     background-image: url("css/img/logo_fixed.svg");
@@ -2095,14 +2176,16 @@ header {
 .oidc-button {
 	background-color: #e4032e;
 	border: 2px solid #e4032e;
-	color: white;
+	color: white !important;
 	font-weight: bold;
 	border-radius: 1px;
-	padding:4px;
+  padding:4px;
 }
 .oidc-button:hover {
-	background-color:#fff;
-	color:#e4032e;
+  background-color:#fff;
+  border: 2px solid #005076;
+  color:#005076 !important;
+  text-decoration: none;
 }
 
 .button-link {
@@ -2115,16 +2198,47 @@ header {
 }
 .button-link:hover {
 	background-color:#fff;
-	color:#e4032e;
+  color:#e4032e;
+  text-decoration: none;
+}
+
+.button-go {
+  background-color: #e4032e; 
+  border: 2px solid #b61f34;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%!important;
+  text-decoration: none;
+}
+
+.button-go:hover {
+  background-color: #f9f9f9; 
+  border: 2px solid #005076;
+  color: #005076;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%!important;
+  text-decoration: none;
 }
 
 .main-navigation {
   display: inline-block;
   transform: translateY(50%);
-  margin-top: 23px;
+  margin-right: 50px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .main-navigation {
     position: fixed;
     height: 100%;
@@ -2159,7 +2273,7 @@ header {
   color: #e4032e;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 985px) {
   .main-navigation a.menu-contatti.last {
     display: block;
     margin: 0 auto;
@@ -2188,7 +2302,7 @@ header {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .main-navigation a, .main-navigation .dropdown {
     display: block;
     text-align: center;
@@ -2198,23 +2312,25 @@ header {
 }
 
 .main-navigation a:hover, .main-navigation .dropdown:hover {
-  color: #00738c;
+  color: #e4032e;
+  text-decoration: none;
 }
 
 .main-navigation a.selected, .main-navigation .dropdown.selected {
-  color: #005076;
+  color: #e4032e;
   font-weight: bold;
 }
 
 .main-navigation a:active, .main-navigation a:hover, .main-navigation .dropdown:active, .main-navigation .dropdown:hover {
-  color: #00738c;
+  color: #e4032e;
+  font-weight: bold;
 }
 
 .main-navigation .dropdown .dropdown-content {
-  background: #005076;
+  background: #e4032e;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .main-navigation .dropdown {
     padding: 0px 0px;
   }
@@ -3917,16 +4033,16 @@ ul.disc-list.special li {
 
 ul.disc-list li {
   margin-bottom: 10px;
-  margin-left: 60px;
   list-style-position: inside;
   text-indent: -18px;
 }
 
-@media only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+/*
+@media only screen and (max-width: 767px), only screen and (min-width: 280px) and (max-width: 767px) {
   ul.disc-list li {
-    margin-left: 30px;
+    margin-left: 15px;
   }
-}
+}*/
 
 ul.disc-list li:before {
   /* add the new bullet point */
@@ -3945,6 +4061,12 @@ ul.disc-list li:before {
     margin-right: 0.35em;
     height: 0.52rem;
     width: 0.52rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ul.disc-list {
+    padding-left: 20px;
   }
 }
 
@@ -5819,6 +5941,7 @@ section.breakpage.social {
   z-index: 2;
 }
 
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .sub-menu {
     display: none;
@@ -6179,6 +6302,7 @@ section.breakpage.social {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding: 20px 0px 40px;
+  margin-top: 30px;
   color: white;
   /* fallback/image non-cover color */
   background-color: #b61f34;
@@ -6294,13 +6418,13 @@ section.breakpage.social {
 */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   #menu {
     display: block;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .menu-open {
     overflow: hidden;
   }

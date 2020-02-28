@@ -15,10 +15,9 @@
                     <h2 class="section-title"><?php the_title();?></h2>
                         <div class="row">
                             <div class="col-12-sm-md-lg">
-
                                 <p> euCanSHare <strong>Access Manager </strong> will provide support for managing data access credentials. 
                                     The access manager should provide a working environment for: </p>
-                                <ul>
+                                <ul class="disc-list">
                                     <li> Researchers applying for data access. </li>
                                     <li> Data managers responsible for evaluating such applications. For each role, the manager will provide a tailored interface. </li>
                                 </ul>
@@ -29,6 +28,7 @@
                                 <p> euCanSHare Access Manager will implement the necessary infrastructure for automatic granting procedures, and interface with the Smart 
                                     Contracts prototype.</p>
 
+                                <!--
                                 <h3> My data access applications </h3> 
 
                                 <p> For a new data access application select desired datasets from the <a href="https://studies.eucanshare.bsc.es/"> Data Catalogue </a> </p>
@@ -55,10 +55,11 @@
 
                                     </div>
                                     
-                                </form>    
+                                </form>  
+                                -->  
                             </div>
 
-                            <?php get_template_part('includes/section', "content"); ?>
+                            <?php get_template_part('includes/section', "content"); ?> 
                         </div>
                     </div>
                 </div>
