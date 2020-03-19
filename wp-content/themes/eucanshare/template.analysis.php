@@ -7,10 +7,7 @@
 
 <?php get_header();?>
 
-<section id="" class="page-default single">
-	    <div class="item-img cover cover-center primary-image" style="height:100px;background-image:url(<?php echo  the_post_thumbnail_url('large');  ?>)"></div>
-            <div class="content-overlap">
-                    <div class="wrapper ">
+
                         <div class="container">
                             <h2 class="section-title"><?php the_title();?></h2>
                             <div class="row inner-box-col">
@@ -29,18 +26,14 @@
                                 </div>
 
                                 <div class="col-lg-8">
-                                    <div class="inner-box-col-img">
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/figure2.png" alt="">
+                                    <div class="text-center">
+                                        <img style="max-width: 700px; height: auto;" src="<?php echo get_template_directory_uri() ?>/img/figure2.png" alt="">
                                     </div>
                                 </div>
 
                                 <?php get_template_part('includes/section', "content"); ?>
                             </div>
                         </div>
-                    </div>
-            </div>
-        </div>
-</section>
 
 <br>
 
