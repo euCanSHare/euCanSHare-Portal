@@ -80,7 +80,6 @@
 	<?php } ?>
 
 
-
 	<div id="main-content">
 		
 <div class="social-bar cf">

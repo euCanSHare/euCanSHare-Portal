@@ -15,7 +15,7 @@
 get_header(); ?>
 
 <div id="home">
-  <div class="container-fluid" style="padding: 0;">
+  <div class="container" style="padding: 0;">
     <div class="row home-col-content">
       <div class="d-lg-flex mx-auto">
         <div class="col-lg-8 pl-3 pr-3 pb-5 align-self-center">
@@ -52,7 +52,7 @@ get_header(); ?>
             <h3> <img src="/dataportal/wp-content/uploads/2019/11/portal-home_db_icon_transparent.png"> 
                   <span style="color: #005076"> Data Catalogue <span> </h3>
           </div>
-          <p>Cohort Browser and Catalogue support data discovery, providing detailed information on data assets and 
+          <p> Cohort Browser and Catalogue support data discovery, providing detailed information on data assets and 
               characteristics such as key variables, access policies and harmonisation status across cohorts. </p>  
           <a style="color: #005076;" href="<?= get_page_link(598)?>"> Read more...</a>
         </div> 
@@ -86,7 +86,7 @@ get_header(); ?>
           <a style="color: #005076;" href="<?= get_page_link(1044)?>"> Read more...</a>
         </div>
         <div class="col-2 text-center align-self-center">
-          <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es"> GO </a>
+          <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es/vre/login.php"> GO </a>
         </div>
       </div>
     </div>

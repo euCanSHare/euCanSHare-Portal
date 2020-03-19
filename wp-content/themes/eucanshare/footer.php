@@ -15,7 +15,7 @@
 
 	<footer class="site-footer">
 		<div class="wrapper">
-			<div class="copyright"><p>© 2019 EUCANSHARE. All rights reserved</p></div>
+			<div class="copyright"><p>© 2020 EUCANSHARE. All rights reserved</p></div>
 			<div class="privacy"><a href="#">Privacy Policy</a></div>
 		</div>
 	</footer>
