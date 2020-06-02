@@ -19,14 +19,15 @@ get_header(); ?>
     <div class="row home-col-content">
       <div class="d-lg-flex mx-auto">
         <div class="col-lg-8 pl-3 pr-3 pb-5 align-self-center">
-          <h1> <span style="color: #b61f34"> Data </span> <span style="color: #005076"> Portal </span> </h1>
+          <!--<h1> <span style="color: #b61f34"> Data </span> <span style="color: #005076"> Portal </span> </h1>-->
+          <h1> Platform </span> </h1>
           <br/>
           <div class="fonts">
             <div class="sm-hide-text">
               <h4> euCanSHare computational environment for next-generation multi-Study Heart research. </h4>
               <br/>
             </div>
-            <p> Data Portal integrates data management and analysis tools from several sources with both technological and geographical diversity. 
+            <p> The platform integrates data management and analysis tools from several sources with both technological and geographical diversity. 
                 It offers: 
             </p>
             <div class="content">

@@ -60,7 +60,12 @@ stickyEl()
 <!-- Google Analytics -->
 
 <!-- Cookies -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script>
+
+<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script> -->
+
+<?php if (is_user_logged_in()) : ?>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/disclaimer.js"></script>
+<?php endif;?>	
 
 <script>
 jQuery( document ).ready(function() {
