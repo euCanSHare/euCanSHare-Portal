@@ -18,15 +18,15 @@ Template Name: Docs
             </div>
 
             <div class="col-lg-12">
-                <p><a class="inner-box-link" href="/dataportal/?page_id=740"> 1) Why bringing your tool to openVRE? </a></p>
+                <p><a class="inner-box-link" href="/platform/?page_id=740"> 1) Why bringing your tool to openVRE? </a></p>
             </div>
 
             <div class="col-lg-12">
-                <p><a class="inner-box-link" href="/dataportal/?page_id=730"> 2) Instructions </a></p>
+                <p><a class="inner-box-link" href="/platform/?page_id=730"> 2) Instructions </a></p>
             </div>
 
             <div class="col-lg-12">
-                <p><a class="inner-box-link" href="/dataportal/?page_id=697"> 3) Integration of tools </a></p>
+                <p><a class="inner-box-link" href="/platform/?page_id=697"> 3) Integration of tools </a></p>
             </div>
         </div>
         <div class="row inner-box-col">
@@ -35,15 +35,15 @@ Template Name: Docs
             </div>
 
             <div class="col-lg-12">
-                <p><a class="inner-box-link" href="/dataportal/?page_id=1406"> 1) Registration </a></p>
+                <p><a class="inner-box-link" href="/platform/?page_id=1406"> 1) Registration </a></p>
             </div>
 
             <div class="col-lg-12">
-                <p><a class="inner-box-link" href="/dataportal/?page_id=1383"> 2) Login </a></p>
+                <p><a class="inner-box-link" href="/platform/?page_id=1383"> 2) Login </a></p>
             </div>
 
             <div class="col-lg-12">
-                <p><a class="inner-box-link" href="/dataportal/?page_id=1426"> 3) Request administrative privileges </a></p>
+                <p><a class="inner-box-link" href="/platform/?page_id=1426"> 3) Request administrative privileges </a></p>
             </div>
 
         </div>
