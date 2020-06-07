@@ -73,7 +73,7 @@ get_header(); ?>
           <a style="color: #005076;" href="<?= get_page_link(603)?>">Read more...</a>
         </div>
         <div class="col-2 text-center align-self-center">
-          <a class="button-go" target="blank" href=""> GO </a>
+          <a class="button-go" target="blank" href="<?= get_page_link(603)?>"> GO </a>
         </div>
       </div>
 
@@ -87,7 +87,8 @@ get_header(); ?>
           <a style="color: #005076;" href="<?= get_page_link(1044)?>"> Read more...</a>
         </div>
         <div class="col-2 text-center align-self-center">
-          <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es/vre/login.php"> GO </a>
+          <!-- <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es/vre/login.php"> GO </a> -->
+          <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es"> GO </a>
         </div>
       </div>
     </div>
