@@ -11,7 +11,7 @@
         <h2 class="section-title"><?php the_title();?></h2>
             <!-- <p> <img src="/dataportal/wp-content/uploads/2019/11/development.png" style="width: 275px; float: right;"> </p> -->
             <div class="row pl-3 pr-3 ml-2 inner-box-col-positioning">
-                <p> <strong> euCanSHare Catalogue is a discovery tool for cardiovascular research data. </strong> </p>
+                <h5 style="color: #445258;"> euCanSHare Catalogue is a discovery tool for cardiovascular research data. </h5>
                 <p> It contains multi-level information about heart-related studies aggregating data from cohort-based studies with omics and bioimaging 
                     data repositories. </p>
                 <p> Currently, euCanSHare data source include: </p>       
@@ -63,7 +63,7 @@
 
             <div class="row">
                 <div class="col-12 text-center">
-                    <a aria-label="Access iPC VRE (opens in a new tab)" class="button-link" href="https://studies.eucanshare.bsc.es" target="_blank">Access euCanSHare catalogue</a>
+                    <a aria-label="Access EUSH VRE (opens in a new tab)" class="button-link" href="https://studies.eucanshare.bsc.es/user/login?destination=node" target="_blank">Access euCanSHare catalogue</a>
                 </div>
             </div>
 
