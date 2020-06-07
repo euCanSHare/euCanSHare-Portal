@@ -8,13 +8,14 @@
 <?php get_header();?>
     <div class="container">
         <h2 class="section-title"><?php the_title();?></h2>
-        <div class="row">
+        <div class="row pl-3 pr-3 ml-2 mt-4">
             <div class="col-12-sm-md-lg">
-                <p> euCanSHare <strong>Access Manager </strong> will provide support for managing data access credentials. 
-                    The access manager should provide a working environment for: </p>
+                <p> euCanSHare <strong>Access Manager </strong> is going to be the central euCanSHare service to administrate data access credentials. 
+                    The access manager will provide a working environment where: </p>
+
                 <ul class="disc-list">
-                    <li> Researchers applying for data access. </li>
-                    <li> Data managers responsible for evaluating such applications. For each role, the manager will provide a tailored interface. </li>
+                    <li> Researchers will apply for dataset access.</li>
+                    <li> Data providers will evaluate researcher’s petitions and administrate their authorization profile. </li>
                 </ul>
 
                 <p> Researchers should have access to their applications for data access, follow their state, communicate with the Data Access Committees, 
