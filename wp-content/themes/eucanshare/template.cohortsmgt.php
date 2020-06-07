@@ -6,23 +6,50 @@
 ?>
 
 <?php get_header();?>
-    <div style="margin-left:100px; margin-right:50px">
-        <h2 class="section-title"><?php the_title();?></h2>
-        <p> This section provides links for data management resources in euCanSHare's platform. </p>
-        <p> Users registered and logged in euCanSHare are allowed to ask for granted privileges in Opal and/or Mica. </p> 
-        <p> Either registered and non-registered users can access to the public cohorts viewer. (Studies) </p>
-        <div class="container">
-            <div class="row">
-                <?php if ( is_user_logged_in() ) : ?> 
-                    <div class="col-12 text-left mt-3 mb-4">
+    <div class="container">
+        <h2 class="section-title"><?php the_title();?></h2>     
+        <div class="row pl-3 pr-3 ml-2 mt-4">    
+            <?php if ( is_user_logged_in() ) : ?> 
+                <div class="row">
+                    <p> These are the main data management tools of the euCanSHare's platform: </p>
+                    <div class="col-12 mt-3 pl-3 pr-3" style="background-color: #f9f9f9;">
+                        <div class="row" style="background-color: #f9f9f9;">
+                            <div class="col-10"> 
+                                <div class="cards-header">
+                                    <h5> <span style="color: #005076"> euCanSHare Mica <span> </h5>
+                                </div>
+                                <p> Portal to control published content of the euCanSHare Catalogue. </p>  
+                            </div> 
+                            <div class="col-2 text-center align-self-center">
+                                <a class="button-go" target="blank" href="https://mica.eucanshare.bsc.es"> GO </a>  
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5" style="background-color: #f9f9f9;">
+                            <div class="col-10"> 
+                                <div class="cards-header">
+                                    <h5> <span style="color: #005076"> Central Opal <span> </h5>
+                                </div>
+                                <p> Data warehouse where to import, transform and describe cohorts data. </p>  
+                            </div> 
+                            <div class="col-2 text-center align-self-center">
+                                <a class="button-go" target="blank" href="https://opal.eucanshare.bsc.es"> GO </a>  
+                            </div>
+                        </div>
+                    </div>
+                    <p> If you require extra privileges to update the content of the data catalogue, request here the right permissions for the management tools: </p>
+                    <div class="col-12 mt-3 mb-4 text-center">
                         <a aria-label="Request access to Opal" class="button-link" href="<?php echo get_page_link(1319) ?>" target="_blank"> Request data manager access </a>
                     </div>
-                <?php endif;?>
+                </div>
+            <?php endif;?>
 
-                <?php if ( ! is_user_logged_in()) : ?>
-                    <p> <strong> You need to be logged in to ask for Data Manager Access privileges </strong> </p>
-                <?php endif;?>
-            </div>
+            <?php if ( ! is_user_logged_in()) : ?>
+                <h5 style="color: #445258"> Please, bear in mind that only registered euCanSHare users are allowed to manage euCanSHare datasets and cohort studies. </h5>
+                <div style="margin-top: 25px; margin-bottom: 25px;">
+                    <p> You can always access to the <span> <a style="color: #005076;" href='https://eucanshare.bsc.es/platform/?page_id=598'> public cohorts viewer. </a> </span> </p>
+                </div>
+            <?php endif;?>
+
         </div>
 	</div>
 
