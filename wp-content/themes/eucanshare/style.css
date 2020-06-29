@@ -901,107 +901,6 @@ MINXING
   margin: 20px 0px 20px 0px;
 }
 
-/* ==========================================================================
- DROPDOWN
-   ========================================================================== */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #b61f34;
-}
-
-.dropdown:hover {
-  color: red;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: transparent;
-}
-
-.dropdown .dropbtn {
-  display: block;
-  cursor: pointer;
-  padding-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .dropdown .dropbtn {
-    display: none;
-  }
-}
-
-.dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: yellow;
-  min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  right: 50%;
-  top: 30px;
-  margin-right: -110px;
-  text-align: left;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .dropdown .dropdown-content {
-    position: relative;
-    display: block;
-    background: transparent;
-    box-shadow: none;
-    z-index: 1;
-    right: 0%;
-    top: 0px;
-    margin-right: 0px;
-    text-align: left;
-  }
-}
-
-.dropdown .dropdown-content:after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent white transparent;
-  top: -10px;
-  right: 17px;
-  position: absolute;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .dropdown .dropdown-content:after {
-    display: none;
-  }
-}
-
-.dropdown .dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-}
-
-.dropdown .dropdown-content a:active, .dropdown .dropdown-content a:hover {
-  background: white;
-  color: #005076;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .dropdown .dropdown-content a {
-    padding: 10px 0px;
-    color: #b61f34;
-  }
-}
-
 #cookie-bar {
   position: fixed;
   display: inline-block;
@@ -1121,6 +1020,19 @@ MINXING
 
 .alert .alert-icon {
   display: none;
+}
+
+.slack-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.slack-button:hover {
+  text-decoration: none;
 }
 
 #cookie-bar .button {
@@ -1519,6 +1431,9 @@ p, ul, li {
    FORM 
    ========================================================================== */
 
+.wpcf7{
+  width: 100%;
+}
 
 .wpcf7, .form-helper {
   font-family: "Roboto", sans-serif;
@@ -1528,7 +1443,7 @@ p, ul, li {
 
 .wpcf7 span.wpcf7-list-item, .form-helper span.wpcf7-list-item {
   display: block;
-  margin: 0px;
+  margin: auto;
 }
 
 .wpcf7 span.wpcf7-list-item .wpcf7-list-item-label, .form-helper span.wpcf7-list-item .wpcf7-list-item-label {
@@ -1551,8 +1466,12 @@ p, ul, li {
   border-bottom: 2px solid #00738c;
   padding: 12px 14px;
   font-size: 15px;
-  width: auto;
+  width: 100%;
   display: block;
+}
+
+textarea {
+  height: 60px;
 }
 
 textarea:hover {
@@ -1563,8 +1482,10 @@ textarea:hover {
 
 .wpcf7 select, .form-helper select {
   font-size: 15px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(0, 115, 140, 0.4);
+  border-bottom: 2px solid #00738c;
   height: 30px;
+  width: 100%;
   background-color: white;
 }
 
@@ -1597,13 +1518,12 @@ textarea:hover {
   border-color: #00738c;
   font-weight: bold;
   text-transform: uppercase;
-  max-width: 200px;
-  float: right;
+  width: 200px;
 }
 
-input[type="submit"]:hover {
-  /*background-color: #b61f34;*/
+input[type="submit"]:hover, .form-helper input[type="submit"]:hover {
   border-color: #b61f34;
+  background-color: #b61f34;
 }
 
 
@@ -1699,6 +1619,26 @@ input[type="submit"]:hover {
 .wpcf7 span.wpcf7-not-valid-tip, .form-helper span.wpcf7-not-valid-tip {
   color: #e4032e;
   margin-top: 5px;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 767px){
+  .font-m-sm {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 419px){
+  .font-m-sm {
+    font-size: 17px;
+  }
+}
+
+.wpcf7-form p:last-child {
+  text-align: center;
+}
+
+.wpcf7-form p label {
+  font-weight: bold;
 }
 
 /* ==========================================================================
@@ -2177,6 +2117,10 @@ header {
   }
 }
 
+/* ==========================================================================
+ BUTTONS: OIDC AND GO'S
+   ========================================================================== */
+
 .oidc-button {
 	background-color: #e4032e;
 	border: 2px solid #e4032e;
@@ -2236,6 +2180,10 @@ header {
   text-decoration: none;
 }
 
+/* ==========================================================================
+ MAIN NAVIGATION CONTAINER
+   ========================================================================== */
+
 .main-navigation {
   display: inline-block;
   transform: translateY(50%);
@@ -2293,6 +2241,61 @@ header {
   }
 }
 
+/* ==========================================================================
+ DROPDOWN
+   ========================================================================== */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #005076;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: #005076;
+    text-align: left;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+.dropdown:hover {
+    color: #b61f34;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+
+.dropdown .dropbtn {
+    display: block;
+    cursor: pointer;
+  }
+  
+@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown .dropbtn {
+      display: none;
+  }
+  .dropdown .dropdown-content {
+    position: relative;
+    display: block;
+    margin: auto;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
 .main-navigation a, .main-navigation .dropdown {
   color: #005076;
   font-family: "Roboto", sans-serif;
@@ -2300,14 +2303,17 @@ header {
   text-transform: uppercase;
   padding: 5px 15px 4px;
   letter-spacing: .5px;
-  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-size: 13px;
 }
 
+.main-navigation a:hover, .main-navigation .dropdown a:hover {
+  color: #e4032e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .main-navigation a, .main-navigation .dropdown {
+  .main-navigation a {
     display: block;
     text-align: center;
     padding: 10px 0px;
@@ -2315,31 +2321,14 @@ header {
   }
 }
 
-.main-navigation a:hover, .main-navigation .dropdown:hover {
-  color: #e4032e;
-  text-decoration: none;
+.cfField{
+  background-color: blue;
+  color: red;
 }
 
-.main-navigation a.selected, .main-navigation .dropdown.selected {
-  color: #e4032e;
+.cfDropdown{
   font-weight: bold;
 }
-
-.main-navigation a:active, .main-navigation a:hover, .main-navigation .dropdown:active, .main-navigation .dropdown:hover {
-  color: #e4032e;
-  font-weight: bold;
-}
-
-.main-navigation .dropdown .dropdown-content {
-  background: #e4032e;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
-  .main-navigation .dropdown {
-    padding: 0px 0px;
-  }
-}
-
 /* ==========================================================================
    SLIDER CONSORTIUM
    ========================================================================== */
@@ -5846,8 +5835,9 @@ section.breakpage.social {
 }
 
 /* ==========================================================================
-  PAGINAZIONE
+  PAGINATION
    ========================================================================== */
+
 .pagination {
   font-family: "Roboto", sans-serif;
   margin: 30px auto;

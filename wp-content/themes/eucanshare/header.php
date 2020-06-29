@@ -53,26 +53,32 @@
 			<div id="menu"> </div>
 
 		</div>	
-		
-		<!-- Login/Logout section -->
 
-		<nav class="main-navigation"> 
-				
-		<!--<?php echo wp_nav_menu('eucanshare' )?>-->
+		<div class="main-navigation">
 			<a href="<?php echo home_url('/')?>">HOME</a>
 			<a target="blank" href="http://eucanshare.eu">PROJECT</a>
 			<a <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
 			<a <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
 			<a <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
 			<a <?php if (is_page('1307')) {echo 'selected';}?> " href="<?php echo get_page_link(1307) ?>">COHORTS MGT.</a>		
-			<a <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a>
-				<?php if (! is_user_logged_in()) : ?>
+  			<div class="dropdown">
+    			<div class="dropbtn"> SUPPORT 
+      				<i class="fa fa-caret-down"></i>
+    			</div>
+    			<div class="dropdown-content">
+					<a <?php if (is_page('629')) {echo 'selected';}?> " href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a> 
+					<a <?php if (is_page('1480')) {echo 'selected';}?> " href="<?php echo get_page_link(1480) ?>">HELPDESK</a> 
+					<a <?php if (is_page('1476')) {echo 'selected';}?> " href="<?php echo get_page_link(1476) ?>">GIVE US FEEDBACK </a> 
+    			</div>
+			</div> 
+			<?php if (! is_user_logged_in()) : ?>
 					<?php echo do_shortcode("[openid_connect_generic_login_button]"); ?>
-				<?php endif;?>
-				<?php if (is_user_logged_in()) : ?>
-					<a class="logout-positioning" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
-				<?php endif;?>			
-		</nav>
+			<?php endif;?>
+			<?php if (is_user_logged_in()) : ?>
+				<a class="logout-positioning" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+			<?php endif;?>	
+		</div>
+
 </header>
 
 	<?php if(is_page('Project')) { ?>
