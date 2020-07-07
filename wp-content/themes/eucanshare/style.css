@@ -2293,7 +2293,7 @@ header {
     background-color: #f9f9f9;
     color: #005076;
     text-align: left;
-    max-width: 160px;
+    min-width: 160px;
     margin-top: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
@@ -2319,7 +2319,7 @@ header {
     cursor: pointer;
   }
   
-@media only screen and (min-width: 768px) and (max-width: 959px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .dropdown {
     width: 100%;
   }
