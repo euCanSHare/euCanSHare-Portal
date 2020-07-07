@@ -12,11 +12,12 @@
 ?>
 
 	</div><!-- #content -->
-
+	
+	
 	<footer class="site-footer">
 		<div class="wrapper">
 			<div class="copyright"><p>© 2020 EUCANSHARE. All rights reserved</p></div>
-			<div class="privacy"><a href="#">Privacy Policy</a></div>
+			<div class="privacy"> <p> <a href="#">Privacy Policy</a> <span style="color:white;"> | </span> <a href="https://eucanshare.bsc.es/platform/?page_id=1480"> Technical support </a> </p> </div>
 		</div>
 	</footer>
 
