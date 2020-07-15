@@ -47,6 +47,17 @@ Template Name: Docs
             </div>
 
         </div>
+        <div class="row inner-box-col">
+            <div class="col-lg-12">
+                <p class="inner-box-title"> Support </p>
+            </div>
+            <div class="col-lg-12">
+                <p><a class="inner-box-link" href="/platform/?page_id=1497"> 1) Helpdesk: Technical questions </a></p>
+            </div>
+            <div class="col-lg-12">
+                <p><a class="inner-box-link" href="/platform/?page_id=1501"> 2) Feedback: General aspects </a></p>
+            </div>
+        </div>
         <br>
 
         <?php get_template_part('includes/section', "content"); ?>
