@@ -75,10 +75,20 @@
 					<?php echo do_shortcode("[openid_connect_generic_login_button]"); ?>
 			<?php endif;?>
 			<?php if (is_user_logged_in()) : ?>
-				<a class="logout-positioning" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+				<div class="dropdown">
+    				<div class="dropbtn"> 
+						<?php
+							$current_user = wp_get_current_user();
+							echo $current_user->display_name ?>
+      					<i class="fa fa-caret-down"></i>
+    				</div>
+    				<div class="dropdown-content">
+						<a class="logout-positioning" href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+    				</div>
+				</div> 
 			<?php endif;?>	
 		</div>
-
+	
 </header>
 
 	<?php if(is_page('Project')) { ?>
