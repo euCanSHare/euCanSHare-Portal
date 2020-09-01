@@ -50,7 +50,9 @@ On the settings page for this plugin (Dashboard > Settings > OpenID Connect Gene
 
 == Changelog ==
 
-= 3.5.0 =
+= 3.5.1 =
+
+* Fix: @daggerhart - New approach to state management using transients.
 
 * Readme fix: @thijskh - Fix syntax error in example openid-connect-generic-login-button-text
 * Feature: @slavicd - Allow override of the plugin by posting credentials to wp-login.php
