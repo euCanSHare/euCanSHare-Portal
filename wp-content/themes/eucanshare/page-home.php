@@ -58,7 +58,13 @@ get_header(); ?>
           <a style="color: #005076;" href="<?= get_page_link(598)?>"> Read more...</a>
         </div> 
         <div class="col-2 text-center align-self-center">
-          <a class="button-go" target="blank" href="https://studies.eucanshare.bsc.es"> GO </a>  
+          <!--<a class="button-go" target="blank" href="https://studies.eucanshare.bsc.es"> GO </a> -->
+          <?php if (is_user_logged_in()) : ?>
+            <a class="button-go" target="blank" href="https://agate.eucanshare.bsc.es/auth/signin/eucanshare?redirect=https%3A%2F%2Fstudies.eucanshare.bsc.es&signin_error=https%3A%2F%2Fstudies.eucanshare.bsc.es%2Fagate/register/#/join"> GO </a>
+          <?php endif;?>
+          <?php if (! is_user_logged_in()) : ?>
+            <a class="button-go" target="blank" href="https://studies.eucanshare.bsc.es"> GO </a>
+          <?php endif;?>
         </div>
       </div>
 
@@ -87,8 +93,12 @@ get_header(); ?>
           <a style="color: #005076;" href="<?= get_page_link(1044)?>"> Read more...</a>
         </div>
         <div class="col-2 text-center align-self-center">
-          <!-- <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es/vre/login.php"> GO </a> -->
-          <a class="button-go" target="blank" href="https://vre.eucanshare.bsc.es"> GO </a>
+          <?php if (is_user_logged_in()) : ?>
+            <a target="blank" class="button-go" href="https://vre.eucanshare.bsc.es/vre/login.php" target="_blank">GO</a>
+          <?php endif;?>
+          <?php if (! is_user_logged_in()) : ?>
+            <a target="blank" class="button-go" href="https://vre.eucanshare.bsc.es/vre" target="_blank">GO</a>
+          <?php endif;?>
         </div>
       </div>
     </div>
@@ -104,7 +114,7 @@ get_header(); ?>
 
 		    <div class="item">
 			    <i class="fas fa-phone"></i>
-			    <div class="content">+34 93402</div>
+			    <div class="content"> +34 934020852 </div>
 		    </div>
 
 		    <div class="item">

@@ -21,7 +21,10 @@
                                 <p> Portal to control published content of the euCanSHare Catalogue. </p>  
                             </div> 
                             <div class="col-2 text-center align-self-center">
-                                <a class="button-go" target="blank" href="https://mica.eucanshare.bsc.es"> GO </a>  
+                                <!-- <a class="button-go" target="blank" href="https://mica.eucanshare.bsc.es"> GO </a> -->
+                                <!-- <a class="button-go" href="https://agate.eucanshare.bsc.es/auth/signin/eucanshare?redirect=https%3A%2F%2Fmica.eucanshare.bsc.es&signin_error=https%3A%2F%2Fstudies.eucanshare.bsc.es%2Fagate/register/#/join"> GO </a>  -->
+                                <a class="button-go" target="blank" href="https://agate.eucanshare.bsc.es/auth/signin/eucanshare?redirect=https%3A%2F%2Fmica.eucanshare.bsc.es&signin_error=https%3A%2F%2Feucanshare.bsc.es/platform/?page_id=1509"> GO </a>  
+                            
                             </div>
                         </div>
                         <div class="row mt-5 mb-5" style="background-color: #f9f9f9;">
@@ -32,7 +35,11 @@
                                 <p> Data warehouse where to import, transform and describe cohorts data. </p>  
                             </div> 
                             <div class="col-2 text-center align-self-center">
-                                <a class="button-go" target="blank" href="https://opal.eucanshare.bsc.es"> GO </a>  
+                                <!-- <a class="button-go" target="blank" href="https://opal.eucanshare.bsc.es"> GO </a> -->
+                                <!-- <a class="button-go" href="https://opal.eucanshare.bsc.es/auth/login/agate?redirect=https%3A%2F%2Fagate.eucanshare.bsc.es/auth/signin/eucanshare?redirect=https%3A%2F%2Fopal.eucanshare.bsc.es&signin_error=https%3A%2F%2Fopal.eucanshare.bsc.es%2Fagate/register/#/join"> GO </a> -->
+                                <!-- <a class="button-go" href="https://agate.eucanshare.bsc.es/auth/signin/eucanshare?redirect=%2F%23%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dopal%26redirect_uri%3Dhttps%3A%2F%2Fopal.eucanshare.bsc.es%2Fauth%2Fcallback%2Fagate%26scope%3Dopenid%20profile"> GO </a> -->
+                                <!-- <a class="button-go" target="blank" href="https://agate.eucanshare.bsc.es/auth/signin/eucanshare?redirect=%2F%23%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dopal%26redirect_uri%3Dhttps%3A%2F%2Fopal.eucanshare.bsc.es%2Fauth%2Fcallback%2Fagate%26scope%3Dopenid%20profile&signin_error=https%3A%2F%2Feucanshare.bsc.es/platform/?page_id=1509"> GO </a> -->
+                                <a class="button-go" target="blank" href="https://opal.eucanshare.bsc.es/auth/login/agate"> GO </a>                                
                             </div>
                         </div>
                     </div>
