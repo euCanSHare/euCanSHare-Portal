@@ -38,6 +38,18 @@
 	<!-- 	Open Graph 	-->
 		
 	<?php wp_head(); ?>
+
+	<!-- Google Analytics -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PQH9JJ32H"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'G-6PQH9JJ32H');
+	</script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -55,10 +67,29 @@
 		</div>	
 
 		<div class="main-navigation">
+			<a <?php if (is_page('6')) {echo 'class=active-item';}?> href="<?php echo esc_url( home_url( '/' ))?>">HOME</a>
+			<a target="blank" href="http://eucanshare.eu">PROJECT</a>
+			<a <?php if (is_page('598')) {echo 'class=active-item';}?> href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
+			<a <?php if (is_page('603')) {echo 'class=active-item';}?> href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
+			<a <?php if (is_page('1516')) {echo 'class=active-item';}?> href="<?php echo get_page_link(1516) ?>">DATA SUBMISSION</a>
+			<a <?php if (is_page('1044')) {echo 'class=active-item';}?> href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
+			<a <?php if (is_page('1307')) {echo 'class=active-item';}?> href="<?php echo get_page_link(1307) ?>">COHORTS MGT.</a>		
+			<div class="dropdown">
+    			<div class="dropbtn"> SUPPORT 
+      				<i class="fa fa-caret-down"></i>
+    			</div>
+    			<div class="dropdown-content">
+					<a <?php if (is_page('629')) {echo 'class=active-item';}?> href="<?php echo get_page_link(629) ?>">DOCUMENTATION</a> 
+					<a <?php if (is_page('1480')) {echo 'class=active-item';}?> href="<?php echo get_page_link(1480) ?>">HELPDESK</a> 
+					<a <?php if (is_page('1476')) {echo 'class=active-item';}?> href="<?php echo get_page_link(1476) ?>">GIVE US FEEDBACK </a> 
+    			</div>
+			</div> 
+			<!--
 			<a href="<?php echo home_url('/')?>">HOME</a>
 			<a target="blank" href="http://eucanshare.eu">PROJECT</a>
 			<a <?php if (is_page('598')) {echo 'selected';}?> " href="<?php echo get_page_link(598) ?>">DATA CATALOGUE</a>
 			<a <?php if (is_page('603')) {echo 'selected';}?> " href="<?php echo get_page_link(603) ?>">DATA ACCESS</a>
+			<a <?php if (is_page('1516')) {echo 'selected';}?> " href="<?php echo get_page_link(1516) ?>">DATA SUBMISSION</a>
 			<a <?php if (is_page('1044')) {echo 'selected';}?> " href="<?php echo get_page_link(1044) ?>">DATA ANALYSIS</a>
 			<a <?php if (is_page('1307')) {echo 'selected';}?> " href="<?php echo get_page_link(1307) ?>">COHORTS MGT.</a>		
   			<div class="dropdown">
@@ -70,7 +101,7 @@
 					<a <?php if (is_page('1480')) {echo 'selected';}?> " href="<?php echo get_page_link(1480) ?>">HELPDESK</a> 
 					<a <?php if (is_page('1476')) {echo 'selected';}?> " href="<?php echo get_page_link(1476) ?>">GIVE US FEEDBACK </a> 
     			</div>
-			</div> 
+			</div> -->
 			<?php if (! is_user_logged_in()) : ?>
 					<?php echo do_shortcode("[openid_connect_generic_login_button]"); ?>
 			<?php endif;?>

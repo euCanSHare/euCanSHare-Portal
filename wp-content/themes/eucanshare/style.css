@@ -772,12 +772,10 @@ INHERITED
   margin-bottom: 1.5rem;
   border-bottom: 1.5px solid #b61f34; 
   font-size: 24px;
-  font-weight: bold;
 }
 
 .inner-box-link {
   color: #343a40; 
-  font-weight: bold;
 }
 
 .inner-box-link:hover {
@@ -1308,7 +1306,7 @@ p, ul, li {
   }
 }
 
-@media only screen and (min-width: 985px) and (max-width: 1140px) {
+@media only screen and (min-width: 1086px) and (max-width: 1140px) {
   .sm-hide-text h4 {
     font-size: 18px;
   }
@@ -2074,7 +2072,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1060px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .menu-fixed .main-navigation {
     padding-top: 100px;
     margin-top: 4px;
@@ -2082,7 +2080,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1086px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .menu-fixed .logo {
     height: 30px;
     background-image: url("css/img/logo_fixed.svg");
@@ -2224,7 +2222,7 @@ header {
   margin-right: 50px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1086px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .main-navigation {
     position: fixed;
     height: 100%;
@@ -2259,7 +2257,7 @@ header {
   color: #e4032e;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px) {
+@media only screen and (min-width: 768px) and (max-width: 1086px) {
   .main-navigation a.menu-contatti.last {
     display: block;
     margin: 0 auto;
@@ -2319,7 +2317,7 @@ header {
     cursor: pointer;
   }
   
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1086px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .dropdown {
     width: 100%;
   }
@@ -2351,7 +2349,13 @@ header {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+.active-item {
+  color: #e4032e!important;
+  text-decoration: none!important;
+  font-weight: bold!important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1086px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .main-navigation a {
     display: block;
     text-align: center;
@@ -6449,13 +6453,13 @@ section.breakpage.social {
 */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1086px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   #menu {
     display: block;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 985px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1086px), only screen and (max-width: 767px), only screen and (min-width: 480px) and (max-width: 767px) {
   .menu-open {
     overflow: hidden;
   }
